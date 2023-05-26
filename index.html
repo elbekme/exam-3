@@ -5,8 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam - 3</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="container text-center">
+        <div id="nav" class="navbar-shrink">
+            <div class="navbar" >
+                <img width="161px" height="32px" src="./img/navbar-logo.png" alt="">
+                <span>
+                    <input type="text" placeholder="Search bar">
+                    <img src="./img/Search.png" alt="">
+                </span>
+                <div>
+                    <a href="#">Category</a>
+                
+                    <img src="./img/dropdown.png" alt="">
+                </div>
+                <a href="" class="nav-p">Become an Mentor</a>
+                <a href="">
+                    <button class="login-btn">Login</button>
+                </a>
+                <a href="">
+                    <button class="Signup-btn">Sign Up</button>
+                </a>
+                <img id="icon" width="45px" height="45px" src="./img/mooon.png" alt="">
+            </div>
+        </div>
+        <header>
+            <div class="header-item">
+                <div class="header-left">
+                    <h1>Find the Best Courses and Amazing Mentor</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
+                    <div>
+                        <img src="./img/Search.png" alt="">
+                        <input type="text" placeholder="Type in the course you want to learn">
+                        <a href="">
+                            <button>Search</button>
+                        </a>
+                    </div>
+                    <span>
+                        <span>
+                            <img src="./img/alarm.png" alt="">
+                            <a >Life Time Acces</a>
+                        </span>
+                        <span>
+                            <img src="./img/user.png" alt="">
+                            <a>Expert Mentor</a>
+                        </span>
+                        <span>
+                            <img src="./img/video_library.png" alt="">
+                            <a>100K+ Courses</a>
+                        </span>
+                    </span>
+                </div>
+                <div class="header-right">
+                    <div class="header-right_box">
+                        <img class="img-1" src="./img/Bell Icon.png" alt="">
+                        <img class="img-2" src="./img/Verification Icon.png" alt="">
+                        <img class="img-3" src="./img/Love Icon.png" alt="">
+                        <div>
+                            <h2>500+</h2>
+                            <p>Total Review</p>
+                            <span class="star">
+                                <img width="24px" height="24px" src="./img/Star (1).png" alt="">
+                                <img width="24px" height="24px" src="./img/Star (1).png" alt="">
+                                <img width="24px" height="24px" src="./img/Star (1).png" alt="">
+                                <img width="24px" height="24px" src="./img/Star (1).png" alt="">
+                                <img width="24px" height="24px" src="./img/Star (1).png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+      </div>
+
+    <script>
+         var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme")
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "img/mooon.png";
+        
+            }else{
+                icon.src= "img/mooon.png";
+            }
+}
+
+                window.addEventListener("scroll", function () {
+                    shrink();
+                    });
+                    let nav = document.getElementById("nav");
+                    function shrink() {
+                    if (scrollY > 100) {
+                        nav.classList.add("navbar-shrink");
+                    } else {
+                            navbar.classList.remove("navbar-shrink");
+                        }
+                }
+    </script>
 </body>
 </html>

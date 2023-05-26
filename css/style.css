@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik:wght@500;700&display=swap");
+:root {
+  --back-color:#FFFFFF;
+}
+
+.dark-theme {
+  --back-color:#000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat" "Rubik";
+}
+body .container {
+  max-width: 100%;
+  height: 300rem;
+  padding: 0;
+  background: var(--back-color);
+}
+body .container #nav {
+  width: 100%;
+  height: 12rem;
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 1;
+}
+body .container #nav .navbar-shrink {
+  padding: 30px 0;
+}
+body .container #nav .navbar {
+  width: 110rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container #nav .navbar div {
+  display: flex;
+}
+body .container #nav .navbar div a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1C3554;
+}
+body .container #nav .navbar a .login-btn {
+  width: 10rem;
+  height: 4.8rem;
+  border-radius: 8px;
+  border: none;
+  background: #F72585;
+  font-family: "Montserrat SemiBold";
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  transition: all 0.3s;
+}
+body .container #nav .navbar a .login-btn:hover {
+  background: #fff;
+  color: #1C3554;
+  border: 1px solid #1C3554;
+}
+body .container #nav .navbar a .Signup-btn {
+  width: 11rem;
+  height: 4.8rem;
+  background: #F72585;
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat SemiBold";
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+body .container #nav .navbar a .Signup-btn:hover {
+  border: 1px solid #1C3554;
+  background: #fff;
+  color: black;
+}
+body .container #nav .navbar .nav-p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1C3554;
+  margin-top: 0.5rem;
+}
+body .container #nav .navbar span input {
+  height: 4.8rem;
+  width: 25rem;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+  padding-left: 1.6rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+}
+body .container #nav .navbar span img {
+  cursor: pointer;
+}
+body .container header {
+  width: 100%;
+  height: 87rem;
+  padding-top: 12rem;
+}
+body .container header .header-item {
+  width: 120rem;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  background: #021934;
+  border-radius: 8px;
+  overflow: hidden;
+}
+body .container header .header-item .header-left {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  padding-left: 6.4rem;
+}
+body .container header .header-item .header-left h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 88px;
+  color: #FFFFFF;
+}
+body .container header .header-item .header-left p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-top: 2.4rem;
+}
+body .container header .header-item .header-left div {
+  width: 50rem;
+  height: 8rem;
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+  margin-top: 6.6rem;
+}
+body .container header .header-item .header-left div input {
+  width: 30rem;
+  height: 8rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #808080;
+  border: none;
+  margin-left: 1.8rem;
+}
+body .container header .header-item .header-left div a button {
+  width: 12.1rem;
+  height: 5.6rem;
+  background: #F72585;
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat SemiBold";
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  transition: all 0.3s;
+  margin-left: 1rem;
+}
+body .container header .header-item .header-left div a button:hover {
+  border: 1px solid #1C3554;
+  background: #fff;
+  color: black;
+}
+body .container header .header-item .header-left span {
+  display: flex;
+  margin-top: 5.6rem;
+}
+body .container header .header-item .header-left span span {
+  display: flex;
+  height: 2.8rem;
+  align-items: center;
+  margin-right: 2rem;
+}
+body .container header .header-item .header-left span span a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FFFFFF;
+  margin-left: 1rem;
+}
+body .container header .header-item .header-right {
+  width: 50%;
+  height: 100%;
+  padding-top: 3rem;
+  padding-left: 5rem;
+}
+body .container header .header-item .header-right .header-right_box {
+  height: 70rem;
+  width: 50rem;
+  background: #E6E6E6;
+  border-radius: 8px;
+  position: relative;
+}
+body .container header .header-item .header-right .header-right_box .img-1 {
+  position: absolute;
+  left: 7rem;
+  top: 4.7rem;
+}
+body .container header .header-item .header-right .header-right_box .img-2 {
+  position: absolute;
+  right: 0;
+  top: 30rem;
+}
+body .container header .header-item .header-right .header-right_box .img-3 {
+  position: absolute;
+  left: 0;
+  top: 41rem;
+}
+body .container header .header-item .header-right .header-right_box div {
+  width: 18rem;
+  height: 11.7rem;
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: absolute;
+  right: 3rem;
+  bottom: 4rem;
+  text-align: center;
+}
+body .container header .header-item .header-right .header-right_box div h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #1C3554;
+  margin-top: 1.6rem;
+}
+body .container header .header-item .header-right .header-right_box div p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #1C3554;
+}
+body .container header .header-item .header-right .header-right_box div .star {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 12%;
+}/*# sourceMappingURL=style.css.map */
