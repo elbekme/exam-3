@@ -42,9 +42,11 @@ a{
             margin: 0 auto;
             height: 100%;
             span{
+                text-align: left;
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                justify-content: left;
                 img{
                     margin-bottom: 1rem;
                 }
@@ -147,15 +149,12 @@ a{
             margin: 0 auto;
             width: 120rem;
             height: 100%;
-            border: 1px solid black;
-            display: flex;
 
             .top-develop{
                 width: 100%;
                 height: 6.4rem;
                 display: flex;
                 justify-content: space-between;
-                border: 1px solid black;
                 h1{
                     font-family: 'Rubik';
                     font-style: normal;
@@ -172,6 +171,11 @@ a{
                         background: #FFF5F9;
                         border-radius: 8px;
                         border: none;
+                        font-family: 'Montserrat SemiBold';
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #F72585;
+                        
                     }
                 }
                 a{
@@ -181,14 +185,239 @@ a{
                         width: 22.4rem;
                         height: 6.4rem;
                         border: none;
+                        font-family: 'Montserrat SemiBold';
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                        margin-left: 4rem;
+                        transition: all .3s;
+                        &:hover{
+                            background: white;
+                            color: black;
+                            border: 1px solid black;
+                        }
                     }
                 }
             }
-            .sidebar{
-                width: 25%;
+            .item-boxes{
+                margin-top: 5rem;
+                width: 100%;
                 height: 100%;
-                background: red;
+                display: flex;
+                .sidebar{
+                    width: 25%;
+                    height:155rem;
+                    text-align: left;
+                    padding-right: 3.6rem;
+                    border-right: 1px solid #CCCCCC;
+                    .check{
+                        span{
+                            display: flex;
+                            align-items: center;
+                            justify-content:space-between;
+                            
+                            h3{
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: 32px;
+                                font-feature-settings: 'pnum' on, 'lnum' on;
+                                color: var(--first-color);
+                            }
+                        }
+                        .line{
+                            text-align: center;
+                            border: 1px solid #CCCCCC;
+                            width: 100%;
+                            margin-top: 3rem;
+                            margin-bottom: 3rem;
+                        }
+                        form{
+                            label{
+                                span{
+                                    display: flex;
+                                    align-items: center;
+                                    h5{
+                                        font-family: 'Montserrat SemiBold';
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        color: var(--first-color);
+                                        margin-top: 1rem;
+                                        margin-left: .8rem;
+                                    }
+                                    p{
+                                        font-family: 'Montserrat SemiBold';
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        color:var(--p-color);
+                                        margin-top: 1.5rem;
+                                        margin-left: .8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .trending-course{
+                    width: 120rem;
+                    height: 90rem;
+                    margin:0 auto;
+                    margin-top: 3rem;
+                    .row{
+                        margin: 0;
+                        display: flex;
+                        gap: 2rem;
+                        column-gap: 2rem;
+                        margin-bottom: 2rem;
+                        text-align: center;
+                        .col{
+                            border-radius: 8px;
+                            width: 28rem;
+                            height: 43rem;
+                            padding: 1.6rem 1.6rem 0 1.6rem;
+                            transition: all .3s;
+                            // border: 1px solid white;
+                            &:hover{
+                                box-shadow: 10px 10px 30px #808080;
+                            }
+                            
+                            .img-place{
+                                background: #CCCCCC;
+                                border-radius: 4px;
+                                height: 20rem;
+                                width: 25rem;
+                                position: relative;
+                                button{
+                                    width: 12rem;
+                                    height: 3.2rem;
+                                    background: #4586D6;
+                                    border-radius: 8px;
+                                    border: none;
+                                    font-family: 'Montserrat SemiBold';
+                                    font-size: 12px;
+                                    line-height: 24px;
+                                    color: white;
+                                    position: absolute;
+                                    bottom: -1.5rem;
+                                    right: 25%;
+                                }
+                            }
+                            h4{
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                text-transform: capitalize;
+                                font-feature-settings: 'pnum' on, 'lnum' on;
+                                color: var(--first-color);
+                                text-align: left;
+                                margin-top: 3rem;
+                            }
+                            p{
+                                font-family: 'Montserrat SemiBold';
+                                font-size: 12px;
+                                line-height: 24px;
+                                color: #F72585;
+                                text-align: left;
+                                font-weight: 500;
+                                margin-top: .8rem;
+                            }
+                            span{
+                                display: flex;
+                                height: 2.4rem;
+                                align-items: center;
+                                p{
+                                    font-family: 'Montserrat SemiBold';
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    color: #808080;
+                                    margin-left: .8rem;
+                                    margin-top: 1.5rem;
+                                }
+                            }
+                            div{
+                                margin-top: 1.5rem;
+                                display: flex;
+                                align-items: center;
+                                p{
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 27px;
+                                    color: #CCCCCC;
+                                }
+                                h5{
+                                    font-family: 'Rubik';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    color: var(--first-color);
+                                    margin-left: .8rem;
+                                }
+                            }
+                        }
+                    }
+                    .course-page{
+                        width: 100%;
+                        margin-top: 4rem;
+                        .page-items{
+                            width:100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 1rem;
+
+                            p{
+                                width: 3.2rem;
+                                height: 3.2rem;
+                                font-family: 'Montserrat SemiBold';
+                                font-size: 16px;
+                                line-height: 32px;
+                                align-items: center;
+                                text-align: center;
+                                color: var(--p-color);
+                                transition: all .3s;
+                                &:hover{
+                                    background: #F72585;
+                                    border-radius: 4px;
+                                    color: white;
+                                }
+                            }
+                            img{
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+                .btn{
+                    text-align: center;
+                    margin-top: 5.6rem;
+                    a{
+                        button{
+                            background: #F72585;
+                            border-radius: 8px;
+                            width: 288px;
+                            height: 60px;
+                            border: none;
+                            font-family: 'Montserrat SemiBold';
+                            font-size: 16px;
+                            line-height: 32px;   
+                            text-align: center;
+                            color: #FFFFFF;
+                            transition: all .3s;
+                            &:hover{
+                                background: white;
+                                border: 1px solid black;
+                                color: #F72585;
+                            }
+                        }
+                    }
+                }
+            }
             }
         }
     }
-}
