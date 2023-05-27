@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik:wght@500;700&display=swap");
 :root {
   --back-color:#FFFFFF;
+  --first-color:#1C3554;
+  --box-back:#000000;
 }
 
 .dark-theme {
   --back-color:#000;
+  --first-color:#FFFFFF;
+  --box-back:#FFFFFF;
 }
 
 * {
@@ -31,7 +35,7 @@ body {
 }
 body .container {
   max-width: 100%;
-  height: 300rem;
+  height: 400rem;
   padding: 0;
   background: var(--back-color);
 }
@@ -282,4 +286,251 @@ body .container header .header-item .header-right .header-right_box div .star {
   display: flex;
   gap: 0.5rem;
   margin-left: 12%;
+}
+body .container .trending {
+  width: 100%;
+  height: 120rem;
+  margin-top: 8rem;
+}
+body .container .trending .trending-items {
+  width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+}
+body .container .trending .trending-items h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--first-color);
+}
+body .container .trending .trending-items .trending-menu {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 6.4rem;
+  align-items: center;
+}
+body .container .trending .trending-items .trending-menu a {
+  font-family: "Montserrat SemiBold";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: #AAAAAA;
+  padding: 2rem 4rem;
+  transition: all 0.3s;
+}
+body .container .trending .trending-items .trending-menu a:hover {
+  background: #F72585;
+  border-radius: 8px;
+  color: white;
+}
+body .container .trending .trending-items .trending-course {
+  width: 120rem;
+  height: 90rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+body .container .trending .trending-items .trending-course .row {
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+body .container .trending .trending-items .trending-course .row .col {
+  width: 28rem;
+  height: 43rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  transition: all 0.3s;
+}
+body .container .trending .trending-items .trending-course .row .col:hover {
+  box-shadow: 10px 10px 30px #808080;
+}
+body .container .trending .trending-items .trending-course .row .col .img-place {
+  background: #CCCCCC;
+  border-radius: 4px;
+  height: 20rem;
+  width: 25rem;
+  position: relative;
+}
+body .container .trending .trending-items .trending-course .row .col .img-place button {
+  width: 12rem;
+  height: 3.2rem;
+  background: #4586D6;
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat SemiBold";
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  position: absolute;
+  bottom: -1.5rem;
+  right: 25%;
+}
+body .container .trending .trending-items .trending-course .row .col h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--first-color);
+  text-align: left;
+  margin-top: 3rem;
+}
+body .container .trending .trending-items .trending-course .row .col p {
+  font-family: "Montserrat SemiBold";
+  font-size: 12px;
+  line-height: 24px;
+  color: #F72585;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+body .container .trending .trending-items .trending-course .row .col span {
+  display: flex;
+  height: 2.4rem;
+  align-items: center;
+}
+body .container .trending .trending-items .trending-course .row .col span p {
+  font-family: "Montserrat SemiBold";
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+}
+body .container .trending .trending-items .trending-course .row .col div {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+body .container .trending .trending-items .trending-course .row .col div p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #CCCCCC;
+}
+body .container .trending .trending-items .trending-course .row .col div h5 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--first-color);
+  margin-left: 0.8rem;
+}
+body .container .trending .trending-items .btn {
+  text-align: center;
+  margin-top: 5.6rem;
+}
+body .container .trending .trending-items .btn a button {
+  background: #F72585;
+  border-radius: 8px;
+  width: 288px;
+  height: 60px;
+  border: none;
+  font-family: "Montserrat SemiBold";
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+body .container .trending .trending-items .btn a button:hover {
+  background: white;
+  border: 1px solid black;
+  color: #F72585;
+}
+body .container .top-category {
+  width: 100%;
+  height: 84rem;
+  margin-top: 15rem;
+}
+body .container .top-category .category-items {
+  width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+}
+body .container .top-category .category-items h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--first-color);
+  text-align: left;
+}
+body .container .top-category .category-items .category-boxes {
+  width: 100%;
+  margin-top: 5.6rem;
+}
+body .container .top-category .category-items .category-boxes .row {
+  display: flex;
+  gap: 1.6rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+body .container .top-category .category-items .category-boxes .row .col {
+  margin: 0;
+  border: 1px solid black;
+  height: 35rem;
+  background: var(--box-back);
+  opacity: 0.5;
+  border-radius: 8px;
+}
+body .container .top-category .category-items .category-boxes .row .col p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--back-color);
+  margin-top: 27.8rem;
+}
+body .container .country {
+  width: 100%;
+  height: 25rem;
+  margin-top: 16rem;
+}
+body .container .country .country-box {
+  width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+}
+body .container .country .country-box .row {
+  gap: 2rem;
+}
+body .container .country .country-box .row .col {
+  height: 100%;
+  padding-top: 4rem;
+}
+body .container .country .country-box .row .col h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: capitalize;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--first-color);
+  margin-top: 2rem;
+}
+body .container .country .country-box .row .col p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--first-color);
 }/*# sourceMappingURL=style.css.map */
