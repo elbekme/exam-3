@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik:wght@500;700&display=swap');
+    $back-color:#FFFFFF;
+    $first-color:#1C3554;
+    $box-back:#000000;
+    $p-color:#808080;
+:root{
+--back-color:#FFFFFF;
+--first-color:#1C3554;
+--box-back:#000000;
+--p-color:#808080;
+}
+.dark-theme{
+--back-color:#000;
+--first-color:#FFFFFF;
+--box-back:#FFFFFF;
+--p-color:#FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    height: 300rem;
+    .header-blog{
+        height: 44rem;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        .header-item_blog{
+            width: 120rem;
+            height: 100%;
+            margin: 0 auto;
+            .page{
+                text-align: left;
+                padding-top: 14rem;
+                a{
+                    font-family: 'Montserrat SemiBold';
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+                    margin-right: 1rem;
+                    margin-left: 1rem;
+                }
+            }
+            h1{
+                text-align: left;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 88px;
+                color: #FFFFFF;
+                margin-top: 6rem;
+                
+            }
+        }
+
+    }
+    .blog-boxes{
+        margin-top: 6rem;
+        width: 100%;
+        .blog-items{
+            margin: 0 auto;
+            width: 120rem;
+            height: 51.7rem;
+            display: flex;
+
+            .item-left{
+                width: 50%;
+                height: 100%;
+                background: #CCCCCC;
+                border-radius: 8px;
+            }
+            .item-right{
+                width: 50%;
+                height: 100%;
+                padding-left: 6rem;
+                text-align: left;
+                span{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    p{
+                        font-family: 'Montserrat SemiBold';
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: var(--p-color);
+                    }
+                    .tochka{
+                        width: .8rem;
+                        height: .8rem;
+                        border-radius: 50%;
+                        background: #4586D6;
+                    }
+                }
+                h1{
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 48px;
+                    text-transform: capitalize;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: var(--first-color);
+                    text-align: left;
+                }
+                p{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: var(--p-color);
+                    text-align: left;
+                    margin-top: 1.6rem; 
+                }
+                a{
+                    
+                    button{
+                        width: 15rem;
+                        height: 5.6rem;
+                        background: #F72585;
+                        border-radius: 8px;
+                        border: none;
+                        font-family: 'Montserrat SemiBold';
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                        margin-top: 7rem;
+                        transition: all .3s; 
+                        &:hover{
+                            background: white;
+                            border: 1px solid black;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog-page{
+        width: 100%;
+        margin-top: 5.6rem;
+        .page-item{
+            width: 120rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .8rem;
+            p{
+                width: 3.2rem;
+                height: 3.2rem;
+                font-family: 'Montserrat SemiBold';
+                font-size: 16px;
+                line-height: 32px;
+                align-items: center;
+                text-align: center;
+                color: var(--p-color);
+                transition: all .3s;
+                &:hover{
+                    background: #F72585;
+                    border-radius: 4px;
+                    color: white;
+                }
+            }
+            img{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}

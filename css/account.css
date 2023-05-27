@@ -108,17 +108,17 @@ body .container .acc-user .acc-item span h6 {
   color: #808080;
   margin-top: 0.8rem;
 }
-body .container .coursee {
+body .container #coursee {
   width: 100%;
   margin-top: 6.4rem;
 }
-body .container .coursee .coursee-item {
+body .container #coursee .coursee-item {
   width: 120rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
-body .container .coursee .coursee-item h2 {
+body .container #coursee .coursee-item h2 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -128,7 +128,7 @@ body .container .coursee .coursee-item h2 {
   cursor: pointer;
   transition: all 0.3s;
 }
-body .container .coursee .coursee-item h2:hover {
+body .container #coursee .coursee-item h2:hover {
   color: var(--first-color);
   font-weight: 500;
   border-bottom: 5px solid #F72585;
